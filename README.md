@@ -52,10 +52,10 @@ The following table lists the primary hardware components required to physically
 | Component | Description | Reference / Usage | Est. Qty |
 | :--- | :--- | :--- | :---: |
 | **MM74C922** | 16-Key Encoder | Translates keypad inputs into 4-bit BCD signals. | 1 |
-| **74LS273** | Octal D-Type Flip-Flop (Register) | Latches and stores the target tablet count (Register A) [cite: 101, 102] [cite_start]and stores the updated Grand Total (Register B). | 2 |
+| **74LS273** | Octal D-Type Flip-Flop (Register) | Latches and stores the target tablet count (Register A) and stores the updated Grand Total (Register B). | 2 |
 | **74HC393** | Dual 4-Bit Binary Counter | Increments with each sensor pulse to track the real-time tablet count in the current bottle. | 1 |
 | **74LS85** | 4-Bit Magnitude Comparator | Compares the "Current Count" with the "Target Number" to trigger the valve stop signal. Cascaded for 8-bit comparison. | 2 |
-| **74LS283** | 4-Bit Binary Full Adder | Used for BCD-to-binary conversion [cite: 119] [cite_start]and to continuously sum the current count with the previous total for the grand total accumulation. | 4 |
+| **74LS283** | 4-Bit Binary Full Adder | Used for BCD-to-binary conversion and to continuously sum the current count with the previous total for the grand total accumulation. | 4 |
 | **74LS47** | BCD to 7-Segment Decoder | Drives the visual 7-segment displays for user target confirmation. | 2 |
 | **4x3 Matrix Keypad** | Input Device | Allows operators to enter the desired tablet count (0-99). | 1 |
 | **7-Segment Display** | Output Device (Visual) | Provides real-time visual monitoring of the target value. | 2 |
